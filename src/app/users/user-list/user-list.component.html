@@ -1,0 +1,25 @@
+<ul>
+  @for (user of users; track $index) {
+    <li>
+      Usuário {{ $index + 1 }}
+      <ul>
+        <li>Nome: {{ user.name }}</li>
+        <li>Idade: {{ user.age }}</li>
+      </ul>
+    </li>
+  }
+</ul>
+
+<hr>
+
+<ul>
+  @for (user of usersHttp; track $index) {
+    <li>
+      Usuário {{ $index + 1 }}
+      <ul>
+        <li>Nome: {{ user.name }}</li>
+        <li>Idade: {{ user.age }}</li>
+      </ul>
+    </li>
+  }
+</ul>

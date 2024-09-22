@@ -1,0 +1,13 @@
+<form [formGroup]="userForm" (ngSubmit)="OnSubmit()" class="example-form"  >
+  <mat-form-field class="example-full-width">
+    <mat-label>Nome</mat-label>
+    <input matInput placeholder="Digite seu nome" name="name" formControlName="name">
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Email</mat-label>
+    <input matInput placeholder="Digite seu Email" name="email" formControlName="email">
+  </mat-form-field>
+
+  <button mat-flat-button type="submit">Enviar</button>
+</form>

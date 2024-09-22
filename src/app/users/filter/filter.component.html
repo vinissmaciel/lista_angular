@@ -1,0 +1,8 @@
+<mat-form-field class="example-full-width">
+  <mat-label>Nome</mat-label>
+  <input matInput placeholder="Digite um nome para buscar" (input)="OnInput($event)">
+</mat-form-field>
+<ul class="example-full-width">
+  <p>Usuários filtrados: </p>
+  <li *ngFor="let user of filteredUsers">{{ user.name }} - Idade: {{ user.age }}</li>
+</ul>
